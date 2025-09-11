@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   padding: 20px;
 }
 
-/* Header */
 header {
   text-align: center;
   margin-bottom: 30px;
@@ -50,7 +48,6 @@ nav a:hover {
   color: #145a32;
 }
 
-/* --- Menu Section --- */
 #menu-list {
   max-width: 900px;
   margin: 0 auto;
@@ -66,7 +63,7 @@ nav a:hover {
 
 article {
   display: flex;
-  flex-direction: column; /* Imagen arriba, texto abajo */
+  flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
   text-align: justify;
@@ -93,7 +90,6 @@ article p {
   text-align: justify;
 }
 
-/* --- Order Form mejorado --- */
 #order-form {
   background: #fff;
   padding: 30px;
@@ -109,7 +105,6 @@ article p {
   color: #8e44ad;
 }
 
-/* Inputs y textareas */
 form input, form textarea {
   margin: 8px 0;
   padding: 8px;
@@ -118,7 +113,6 @@ form input, form textarea {
   font-size: 1rem;
 }
 
-/* Agrupar los fieldsets de "Choose a side" y "Add-ons" */
 .form-options {
   display: flex;
   justify-content: space-between;
@@ -141,7 +135,6 @@ legend {
   color: #16a085;
 }
 
-/* Botón */
 input[type="submit"] {
   background: #27ae60;
   color: #fff;
@@ -159,7 +152,6 @@ input[type="submit"]:hover {
   background: #145a32;
 }
 
-/* --- Footer --- */
 footer {
   text-align: center;
   margin-top: 40px;
