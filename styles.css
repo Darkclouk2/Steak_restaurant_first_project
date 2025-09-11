@@ -1,0 +1,181 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#header-img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #145a32;
+}
+
+/* --- Menu Section --- */
+#menu-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#menu-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #e67e22;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+/* Alternar imágenes izquierda/derecha */
+article:nth-child(odd) {
+  flex-direction: row; /* izquierda */
+}
+
+article:nth-child(even) {
+  flex-direction: row-reverse; /* derecha */
+}
+
+article img {
+  border-radius: 10px;
+  max-width: 250px;
+  height: auto;
+}
+
+article h3 {
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* --- Order Form --- */
+#order-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+#order-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8e44ad;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  margin: 8px 0;
+  padding: 8px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form input[type="number"] {
+  width: 80px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #16a085;
+}
+
+input[type="submit"] {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #145a32;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #27ae60;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

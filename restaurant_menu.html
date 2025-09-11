@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <header>
+      <img id="header-img" class="center-image" width="400"
+                      src="https://filecache.mediaroom.com/mr5mr_subway/178093/Subway%20Hi-Res%20Logo_asset_thumbnail.png"
+                      alt="Subway Logo"/>
+    <h1>My Restaurante Subway</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu-list">Menu</a></li>
+          <li><a href="#Order-form">Place your order</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section id="menu-list"> 
+          <h2>Menu</h2>
+            <article>
+                <h3>Carnes a la parrilla</h3>
+                <figure>
+                <img id="Menu-Carne" class="center-image" width="200"
+                      src="https://delishglobe.com/wp-content/uploads/2024/10/Churrasco-2048x1499.png"
+                      alt="Churrasco a la plancha cocido"/>
+                      <figcaption>Churraso a la plancha</figure>
+                        <p> Churrasco, Brazil’s iconic barbecue tradition, is more than just a meal, it’s an experience. With origins that date back to the gauchos (cowboys) of southern Brazil, Churrasco is a celebration of fire, meat, and community.Typically enjoyed in a lively, communal setting, this barbecue brings together family and friends to savour perfectly grilled cuts of meat served hot off the grill.</p>
+                      </figure>
+            </article>
+            <article><h3>Pollo a la parrilla</h3>
+                <figure>
+                <img id="Menu-Pollo" class="center-image" width="200"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi59HHhfP1RUCrMRGu9ZGQuTOL42om0e1ikw&s" 
+                      alt="Pollo a la plancha cocido"/>
+                      <figcaption>Pollo a la plancha</figure>
+                        <p> Cocinar pechugas de pollo a la parrilla -ya sea en una parrilla al aire libre, de interiores o una sartén- es una forma sencilla de preparar esta sabrosa proteína magra. Solo se necesita una pequeña cantidad de aceite de oliva y tal vez algunas especias para preparar un pollo sabroso. Además, puede cocinar varias a la vez y ahorrar tiempo más tarde (refrigerar y usar dentro de los 3 o 4 días siguientes). Si bien el pollo a la parrilla es un clásico, si lo come muy seguido, puede cansar. Al agregar solo algunos ingredientes, puede agregar entusiasmo e intriga al pollo a la parrilla.</p>
+                </figure>
+            </article>
+            <article><h3>Pescado a la parrilla</h3>
+                <figure>
+                <img id="Menu-Pescado" class="center-image" width="200"
+                      src="https://www.hola.com/horizon/landscape/15999c33bb55-pescado-plancha-t.jpg?im=Resize=(960),type=downsize" 
+                      alt="Pescado a la plancha cocido"/>
+                      <figcaption>Pescado a la plancha</figure>
+                        <p> Por un lado tenemos un pescado de piel pálida, blanda, chiclosa, carne inequívocamente seca y desmigada por algunas zonas… Por otro, en el plato de al lado, ese mismo pescado, pero esta vez su piel luce doradita, con aspecto crujiente y apetecible, una carne jugosa… Ambos son lomos extraídos de un mismo pez. Y ambos han sido cocinados a la plancha. ¿Qué ha ocurrido entonces? Pues que, aunque se trata de una técnica sencilla, también requiere de sus pequeños trucos si queremos obtener buenos resultados. .</p>
+                </figure>
+            </article>
+        </section>
+        <section id="Order-form">
+          <h2>Place your order</h2>
+    <form action="#" method="post">
+        <!-- Input fields for quantities plus rectangle for number-->
+      <label for="Churrasco">Churrasco:</label>
+      <input type="number" id="Churrasco" name="Churrasco" min="0" value="0"><br><br>
+
+      <label for="Pollo">Pollo a la plancha:</label>
+      <input type="number" id="Pollo" name="Pollo" min="0" value="0"><br><br>
+
+      <label for="Pescado">Pescado a la plancha:</label>
+      <input type="number" id="Pescado" name="Pescado" min="0" value="0"><br><br>
+
+      <!-- Checkboxes for add-ons with multiple option-->
+      <fieldset>
+        <legend>Add-ons:</legend>
+        <input type="checkbox" id="Porcion-Arroz" name="addons" value="Arroz">
+        <label for="Porcion-Arroz">Porcion-Arroz</label><br>
+
+        <input type="checkbox" id="Papas-fritas" name="addons" value="Papas-fritas">
+        <label for="Papas-fritas">Papas fritas</label><br>
+
+        <input type="checkbox" id="Gaseosa" name="addons" value="Gaseosa">
+        <label for="Gaseosa">Gaseosa</label>
+      </fieldset><br>
+
+      <!-- input as Radio buttons for choosing just one side plate -->
+      <fieldset>
+        <legend>Choose a Side:</legend>
+        <input type="radio" id="salad" name="side" value="salad">
+        <label for="salad">Salad</label><br>
+
+        <input type="radio" id="soup" name="side" value="soup">
+        <label for="soup">Soup</label><br>
+
+        <input type="radio" id="breadsticks" name="side" value="breadsticks">
+        <label for="breadsticks">Breadsticks</label>
+      </fieldset><br>
+
+      <!-- Textarea for special requests and extra information -->
+      <label for="requests">Comentario adicional:</label><br>
+      <textarea id="requests" name="requests" rows="5" cols="60" placeholder="Agregue aqui informacion adicional"></textarea><br><br>
+
+      <!-- Submit option with check out label-->
+      <input type="submit" value="Go To Checkout">
+    </form>
+        </section>  
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#menu-list">Go back to menu</a></li>
+        <li><a href="#order-form">Go back to add-ons</a></li>
+      </ul>
+    <p>Made with love by Harvey Blandon with Codédex Daily heelp © 2025</p>
+    </footer>
+  </body>
+</html>
