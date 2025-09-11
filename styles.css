@@ -129,7 +129,8 @@ form input, form textarea {
 .form-options fieldset {
   flex: 1;
   min-width: 250px;
-  border: 1px solid #ccc;
+  max-width: 300px;
+  border: 2px solid #ccc;
   padding: 15px;
   border-radius: 8px;
   background: #fefefe;
